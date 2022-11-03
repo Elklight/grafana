@@ -60,7 +60,7 @@ export class Branding {
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
   static AppTitle = 'MetalWave';
-  static LoginTitle = 'Welcome to MetalWave';
+  static LoginTitle = '';
   static GetLoginSubTitle = (): null | string => {
     return null;
   };
