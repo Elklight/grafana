@@ -39,16 +39,16 @@ export let getVersionLinks = (): FooterLink[] => {
   const links: FooterLink[] = [];
   const stateInfo = licenseInfo.stateInfo ? ` (${licenseInfo.stateInfo})` : '';
 
-#  links.push({
-#    target: '_blank',
-#    id: 'version',
-#    text: `${buildInfo.edition}${stateInfo}`,
-#    url: licenseInfo.licenseUrl,
-#  });
+  links.push({
+    target: '_blank',
+    id: 'version',
+    text: `${buildInfo.edition}${stateInfo}`,
+    url: licenseInfo.licenseUrl,
+  });
 
-#  if (buildInfo.hideVersion) {
-#    return links;
-#  }
+  if (buildInfo.hideVersion) {
+    return links;
+  }
 
   const { hasReleaseNotes } = getVersionMeta(buildInfo.version);
 
